@@ -1,4 +1,4 @@
-using Console;
+using System;
 
 class Hevonen {
     public string nimi;
