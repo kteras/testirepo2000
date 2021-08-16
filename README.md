@@ -20,7 +20,7 @@ Perjantaina 13. elokuuta Github muutti kirjautumisvaatimuksiaan ja login/salasan
 9. Keksi avaimelle nimi "Title" kenttään.
 10. Liitä kohdassa 6 kopioimasi avain "Key" kenttään.
 11. Klikkaa vihreää "Add SSH key" painiketta.
-12. Kokeile GitBashissa että yhteys toimii nyt: ```ssh -T git@github.com```. Mikäli komennon vastauksesta nyt löytyy kohta ```...You've successfully authenticated...``` siirry kohtaan 13. Muussa tapauksessa ota yhteyttä opettajaan.
+12. Kokeile GitBashissa että yhteys toimii nyt: ```ssh -T git@github.com```. Mikäli komennon vastauksesta nyt löytyy kohta ```...You've successfully authenticated...``` siirry kohtaan 13. Muussa tapauksessa ota yhteyttä opettajaan. Jos ssh valittaa ettei tunne githubin palvelinta ja kysyy haluatko varmasti lisätä tämän palvelimen tunnettujen palvelimien listalle, vastaa ```yes``` (kirjoita sana yes kokonaan).
 13. Kerro gitille että githubiin otetaan tästä lähtien yhteys SSH-yhteydellä: ```git remote set-url origin git@github.com:kteras/olio-ohjelmointi-2021-syksy.git```
 14. Kokeile komennolla ```git fetch```. Mikäli se onnistuu eikä palauta virheilmoitusta, on ssh autentikointi asetettu onnistuneesti.
 
@@ -56,7 +56,7 @@ Kaikki tämä tehdään GitBashissä harjoitustehtävän hakemistossa.
 4. ```git commit -m "Tehtävän <se ja se> palautus."``` - laita palauttamasi tehtävän nimi ja/tai numero kommenttiin.
 5. ```git push``` 
 
-# Muita hyödyllisä komentoja GitBashissä
+# Muita hyödyllisiä komentoja GitBashissä
 
 ## ```cd```
 Siirtyy toiseen hakemistoon, esim. ```cd 00_Hevonen``` siirtyy hakemistoon ```00_Hevonen```
