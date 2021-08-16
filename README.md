@@ -42,7 +42,7 @@ Tämäkin tehdään aluksi vain kerran.
 
 # Uusien tehtävänantojen hakeminen
 Kaikki tämä tehdään GitBashissä harjoitustehtävän hakemistossa.
-1. ```git status``` - tarkista että olet omassa haarassa (branch), ja että sinulla ei ole avoimia muutoksia (jotka näkyvät punaisena tai vihreänä). Mikäli niitä on, tallenna ne ensin komennoilla ```git add .```, ```git commit -m "Muutokset talteen.".
+1. ```git status``` - tarkista että olet omassa haarassa (branch), ja että sinulla ei ole avoimia muutoksia (jotka näkyvät punaisena tai vihreänä). Mikäli niitä on, tallenna ne ensin komennoilla ```git add .```, ```git commit -m "Muutokset talteen."```.
 2. ```git checkout main```
 3. ```git pull```
 4. ```git checkout <omanimi>``` - vaihda omanimi oman haarasi nimeksi.
