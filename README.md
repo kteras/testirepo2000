@@ -37,7 +37,7 @@ Tämä tehdään vain kerran kurssin aluksi. Jokaiselle kurssilaiselle on lähet
 
 # Oman haaran (branch) luominen
 Tämäkin tehdään aluksi vain kerran.
-1. Avaa GitBash tehtäväkansioon ```olio-ohjelmointi-2021-syksy.git``` ellei se ole jo auki kyseisessä hakemistossa.
+1. Avaa GitBash tehtäväkansioon ```olio-ohjelmointi-2021-syksy``` ellei se ole jo auki kyseisessä hakemistossa.
 2. kirjoita komento ```git checkout -b <omanimi>``` jossa omanimi on oma nimesi tai tunnuksesi ilman ääkkösiä tai välilyöntejä. Esim. ```git checkout -b karrit```.
 
 # Uusien tehtävänantojen hakeminen
