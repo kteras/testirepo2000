@@ -5,7 +5,29 @@ Jokainen tehtävä sijoitetaan tänne omaan hakemistoonsa ja jokainen kurssilain
 
 # Git ohje
 
-**HUOM! Perjantaina 13. elokuuta Github muutti kirjautumisvaatimuksiaan ja login/salasana kirjautuminen ei enää toimi. Teemme kaikille SSH avaimet Maanantaina 16. elokuuta. Kopioin ohjeen myös tänne.
+# SSH avaimen luonti Githubia varten
+Perjantaina 13. elokuuta Github muutti kirjautumisvaatimuksiaan ja login/salasana kirjautuminen ei enää toimi. Tämän takia luomme kaikille SSH avaimet ja käytämme niitä autentikointiin Githubin kanssa.
+**HUOM! Jos pääset normaalisti kirjautumaan Githubiin ei SSH avaimiin siirtyminen ole pakollista. Tee siis nämä vaiheet vain jos Github ei enää päästä sinua sisään!**
+
+1. Avaa GitBash ```olio-ohjelmointi-2021-syksy hakemistossa```.
+2. Kokeile komentoa ```ssh -T git@github.com```. Mikäli komennon vastauksesta löytyy kohta ```...You've successfully authenticated...``` olet valmis eikä tätä ohjetta tarvitse seurata pidemmälle. Mikäli autentikointi taas epäonnistuu jatka kohtaan 3.
+3. ```ls ~/.ssh``` - Mikäli komento onnistuu ja tulostaa hakemiston josta löytyy tiedostot ```id_rsa``` ja ```id_rsa.pub``` hyppää kohtaan 5. Mikäli tiedostot puuttuvat tai koko ```.ssh``` hakemisto puuttuu siirry kohtaan 4.
+4. ```ssh-keygen -t rsa -b 2048``` - Vastaa jokaiseen kysymykseen painamalla enteriä (älä siis muuta oletusvastauksia.)
+5. ```ls ~/.ssh``` - Nyt komennon pitäisi tulostaa hakemisto josta löytyy tiedostot ```id_rsa``` ja ```id_rsa.pub```.
+6. ```cat ~/.ssh/id_rsa.pub``` - Tulostaa konsoliin julkisen avaimesi. Kopioi avain talteen. Esimerkki avaimesta alla.
+7. Mene githubin avaintenhallintasivulle ```https://github.com/settings/keys```
+8. Klikkaa vihreää "New SSH key" painiketta.
+9. Keksi avaimelle nimi "Title" kenttään.
+10. Liitä kohdassa 5 kopioimasi avain "Key" kenttään.
+11. Klikkaa vihreää "Add SSH key" painiketta.
+12. Kokeile GitBashissa että yhteys toimii nyt: ```ssh -T git@github.com```. Mikäli komennon vastauksesta nyt löytyy kohta ```...You've successfully authenticated...``` siirry kohtaan 13. Muussa tapauksessa ota yhteyttä opettajaan.
+13. Kerro gitille että githubiin otetaan tästä lähtien yhteys SSH-yhteydellä: ```git remote set-url origin git@github.com:kteras/olio-ohjelmointi-2021-syksy.git```
+14. Kokeile komennolla ```git fetch```. Mikäli se onnistuu eikä palauta virheilmoitusta, on ssh autentikointi asetettu onnistuneesti.
+
+*Esimerkki kohdan 5. ja 6. avaimesta:*
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdFIDeYjLcmRENhfZC16feD6/TJ1WrpSAfBkxr2v2+u5tbiNsSHLLV0rhqwmajZXkEBSjL97PyT3LVNemMa82BI3BB53t5An61DO8GgP0IY+jQef6P5HoFnfD2Pxu4PxpAjse5dZaZa7GR8nyLEzYUh38C+/p7H5eMNolZiSqgPHFtPDXwa6GvY2gYUDdhFGZmNMXFZ3sTVMjtdA/CDsO4kNCG8CFddTsFsrBhiS1j9nvARd2MgaN+3EL5beehTjr1/BZqyRc5vcfM2SUCqaFbdxq6Y1dXfGGLzNrwvVCa36a4LrNOoeQn930Ay15VhQ8xKBIta/IQY42e2RFfzeiN karri@sanxion
+```
 
 # Repositorion kloonaaminen omalle koneelle
 Tämä tehdään vain kerran kurssin aluksi. Jokaiselle kurssilaiselle on lähetetty kutsu tulla kolloboraattoriksi tähän repositorioon.
