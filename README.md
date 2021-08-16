@@ -31,7 +31,7 @@ Kaikki tämä tehdään GitBashissä harjoitustehtävän hakemistossa.
 1. ```git status``` - tarkista että olet omassa haarassa (branch), ja että sinulla ON avoimia muutoksia (jotka näkyvät punaisena).
 2. ```git add .```
 3. ```git status``` - tarkista että muutokset näkyvät nyt vihreinä.
-4. ```git commit -n "Tehtävän <se ja se> palautus."``` - laita palauttamasi tehtävän nimi ja/tai numero kommenttiin.
+4. ```git commit -m "Tehtävän <se ja se> palautus."``` - laita palauttamasi tehtävän nimi ja/tai numero kommenttiin.
 5. ```git push``` 
 
 # Muita hyödyllisä komentoja GitBashissä
