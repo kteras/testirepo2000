@@ -6,6 +6,7 @@ namespace _01_kissa
     {
         static void Main(string[] args)
         {
+            /* OSAN 1 testaus
             //1. Ota Uusi Kissa-luokka Program.cs:ssä käyttöön luomalla uusi kissa-olio parametrittomalla konstruktorilla. 
             Kissa katti=new Kissa();
             //2. Anna sen jälkeen kissalle nimi suoraan public muuttujalla.
@@ -24,6 +25,19 @@ namespace _01_kissa
             Kissa toinenkissa = new Kissa(14,"Toinenkissa");
             //8. Tulosta uuden olion tiedot nimi ja ikä.
             System.Console.WriteLine(toinenkissa.PalautaKissanNimi()+" ika: "+toinenkissa.PalautaKissanIka());
+            */
+
+            //a. Luo uusi kissa-olio laita muuttuja nimeksi katti.
+            Kissa katti=new Kissa();
+            katti.AsetaKissanNimi("katti");
+            //b. Aseta katin nimeksi ensin "Anneli" ja tulostat onnistuuko nimen asetus vai ei.
+            System.Console.WriteLine("Onnistuiko Anneli nimen asetus: " + katti.AsetaKissanNimi("Anneli"));
+            //c. Tulosta perään olion katin sen hetkinen nimi.
+            System.Console.WriteLine("Katin nimi on nyt " + katti.PalautaKissanNimi());
+            //d. Asetat katin nimeksi "Hilda" ja tulostat onnistuuko se vai ei.
+            System.Console.WriteLine("Onnistuiko Hilda nimen asetus: " + katti.AsetaKissanNimi("Hilda"));
+            //e. Tulostat perään katin sen hetkisen nimen.
+            System.Console.WriteLine("Katin nimi on nyt " + katti.PalautaKissanNimi());
         }
     }
 }
