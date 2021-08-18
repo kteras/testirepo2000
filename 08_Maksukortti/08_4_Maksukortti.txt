@@ -3,11 +3,13 @@ Lisätään luokkaan LataaRahaa metori, jolla saa lisättyä saldoa annetun luvu
 Ominaisuuden testaava pääohjelma:
 
 public class Program {
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
+		Maksukortti kortti=new Maksukortti(15);		
 		Console.WriteLine(kortti); 
 		kortti.lataaRahaa(15);
 		Console.WriteLine(kortti); 
 		kortti.lataaRahaa(10); 
+		Console.WriteLine(kortti); 
 		kortti.lataaRahaa(200); 
 		Console.WriteLine(kortti); 
 	} 
