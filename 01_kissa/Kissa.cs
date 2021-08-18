@@ -48,5 +48,10 @@ namespace _01_kissa
             return ika;
         }
 
+        public override string ToString() {
+            // Kissa: Miuku, ikä 0.
+            return "Kissa: "+nimi+", ika "+ika+".";
+        }
+
     }
 }

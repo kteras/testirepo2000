@@ -27,6 +27,7 @@ namespace _01_kissa
             System.Console.WriteLine(toinenkissa.PalautaKissanNimi()+" ika: "+toinenkissa.PalautaKissanIka());
             */
 
+            /* OSAN 2 TESTAUS
             //a. Luo uusi kissa-olio laita muuttuja nimeksi katti.
             Kissa katti=new Kissa();
             katti.AsetaKissanNimi("katti");
@@ -38,6 +39,12 @@ namespace _01_kissa
             System.Console.WriteLine("Onnistuiko Hilda nimen asetus: " + katti.AsetaKissanNimi("Hilda"));
             //e. Tulostat perään katin sen hetkisen nimen.
             System.Console.WriteLine("Katin nimi on nyt " + katti.PalautaKissanNimi());
+            */
+
+            // OSA 3
+
+            Kissa katti = new Kissa();
+            Console.WriteLine(katti); 
         }
     }
 }
