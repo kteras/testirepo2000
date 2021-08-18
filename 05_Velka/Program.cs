@@ -6,7 +6,14 @@ namespace _05_Velka
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Velka v=new Velka(1000,0.1);
+            v.TulostaSaldo();
+            v.OdotaVuosi();
+            v.TulostaSaldo();
+            v.OdotaVuosi();
+            v.TulostaSaldo();
+            v.OdotaVuosi();
+            v.TulostaSaldo();
         }
     }
 }
