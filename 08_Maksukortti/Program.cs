@@ -6,7 +6,7 @@ namespace _08_Maksukortti
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            Maksukortti kortti = new Maksukortti(50);
+            Console.WriteLine(kortti);         }
     }
 }
