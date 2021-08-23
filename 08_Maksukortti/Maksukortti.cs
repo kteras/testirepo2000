@@ -15,15 +15,19 @@ namespace _08_Maksukortti
             return $"Kortilla on rahaa {saldo:N2} euroa";
         }
 
-        public void syoEdullisesti() { 
-            // 2.60 
-            // saldo=saldo-2.60
-            saldo-=2.60;
+        public void SyoEdullisesti() { 
+            // 2.60
+            if(saldo>=2.60) {
+                // saldo=saldo-2.60
+                saldo-=2.60;
+            }
         }
 
-        public void syoMaukkaasti() {
+        public void SyoMaukkaasti() {
             // 4.60
-            saldo-=4.60;
+            if(saldo>=4.60) {
+                saldo-=4.60;
+            }
         }
     }
 }

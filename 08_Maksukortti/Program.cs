@@ -6,12 +6,11 @@ namespace _08_Maksukortti
     {
         static void Main(string[] args)
         {
-            Maksukortti kortti = new Maksukortti(50); 
+            Maksukortti kortti = new Maksukortti(5); 
             Console.WriteLine(kortti); 
-            kortti.syoEdullisesti();
+            kortti.SyoMaukkaasti(); 
             Console.WriteLine(kortti); 
-            kortti.syoMaukkaasti(); 
-            kortti.syoEdullisesti(); 
+            kortti.SyoMaukkaasti(); 
             Console.WriteLine(kortti);
         }
     }
