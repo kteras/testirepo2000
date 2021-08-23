@@ -31,7 +31,10 @@ namespace _08_Maksukortti
         }
 
         public void LataaRahaa(double summa) {
-            saldo+=summa;
+            //if(summa>0) {  - ajaa saman asian
+            if(summa>=0) {
+                saldo+=summa;
+            }
         }
     }
 }
