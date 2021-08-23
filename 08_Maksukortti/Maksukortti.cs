@@ -10,9 +10,9 @@ namespace _08_Maksukortti
 
         public override String ToString() {
             // "Kortilla on rahaa X euroa"
-            return "Kortilla on rahaa "+String.Format("{0:0.00}",saldo)+" euroa";
+            //return "Kortilla on rahaa "+String.Format("{0:0.00}",saldo)+" euroa";
             // vaihtoehtoinen syntaksi
-            //return $"Kortilla on rahaa {saldo} euroa";
+            return $"Kortilla on rahaa {saldo:N2} euroa";
         }
 
         public void syoEdullisesti() { 
