@@ -29,5 +29,9 @@ namespace _08_Maksukortti
                 saldo-=4.60;
             }
         }
+
+        public void LataaRahaa(double summa) {
+            saldo+=summa;
+        }
     }
 }

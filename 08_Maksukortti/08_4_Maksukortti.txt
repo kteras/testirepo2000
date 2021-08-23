@@ -1,4 +1,4 @@
-Lisätään luokkaan LataaRahaa metori, jolla saa lisättyä saldoa annetun luvun verran.
+Lisätään luokkaan LataaRahaa metodi, jolla saa lisättyä saldoa annetun luvun verran.
 
 Ominaisuuden testaava pääohjelma:
 
